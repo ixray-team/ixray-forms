@@ -87,7 +87,6 @@ namespace PostprocessEditor.WindowsForms
             this.IntensityValue.Size = new System.Drawing.Size(93, 20);
             this.IntensityValue.TabIndex = 9;
             this.IntensityValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.IntensityValue.Visible = false;
             // 
             // labelIntensity
             // 
@@ -97,7 +96,6 @@ namespace PostprocessEditor.WindowsForms
             this.labelIntensity.Size = new System.Drawing.Size(40, 13);
             this.labelIntensity.TabIndex = 8;
             this.labelIntensity.Text = "Itensity";
-            this.labelIntensity.Visible = false;
             // 
             // BlueValue
             // 

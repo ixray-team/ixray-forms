@@ -49,7 +49,7 @@ namespace PostprocessEditor.WindowsForms
 
         private void MainForm_Load(object sender, System.EventArgs e)
         {
-            var form1 = new AddColorForm();
+            var form1 = new AddColorForm(false,  false);
             foreach (var control in form1.Controls)
             {
                 WorkArea1.Controls.Add((Control)control);

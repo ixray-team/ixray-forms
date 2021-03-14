@@ -9,6 +9,13 @@ namespace PostprocessEditor.WindowsForms
         {
             InitializeComponent();
         }
+        public AddColorForm(bool intensityLabelVisible, bool intensityValueVisible)
+        {
+            InitializeComponent();
+
+            labelIntensity.Visible = intensityLabelVisible;
+            IntensityValue.Visible = intensityValueVisible;
+        }
 
         private void Color_Click(object sender, EventArgs e)
         {
