@@ -135,6 +135,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddColorForm.resx">
+      <DependentUpon>AddColorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFloatForm.resx">
+      <DependentUpon>AddFloatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConstructor.resx">
+      <DependentUpon>frmConstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeConstructor.resx">
+      <DependentUpon>frmTimeConstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

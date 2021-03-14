@@ -29,12 +29,44 @@ namespace PostprocessEditor.WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.Button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Button1
+            // 
+            this.Button1.Location = new System.Drawing.Point(4, 71);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(75, 25);
+            this.Button1.TabIndex = 0;
+            this.Button1.Text = "OK";
+            this.Button1.UseVisualStyleBackColor = true;
+            // 
+            // Button2
+            // 
+            this.Button2.Location = new System.Drawing.Point(104, 71);
+            this.Button2.Name = "Button2";
+            this.Button2.Size = new System.Drawing.Size(75, 25);
+            this.Button2.TabIndex = 1;
+            this.Button2.Text = "Cancel";
+            this.Button2.UseVisualStyleBackColor = true;
+            // 
+            // frmConstructor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmConstructor";
+            this.ClientSize = new System.Drawing.Size(385, 95);
+            this.Controls.Add(this.Button2);
+            this.Controls.Add(this.Button1);
+            this.Name = "frmConstructor";
+            this.Text = "Single constructor";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Button1;
+        private System.Windows.Forms.Button Button2;
     }
 }
