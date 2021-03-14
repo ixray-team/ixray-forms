@@ -419,6 +419,7 @@ namespace PostprocessEditor.WindowsForms
             // 
             // Image
             // 
+            this.Image.BackColor = System.Drawing.Color.White;
             this.Image.Location = new System.Drawing.Point(4, 52);
             this.Image.Name = "Image";
             this.Image.Size = new System.Drawing.Size(793, 392);
