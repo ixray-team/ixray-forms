@@ -31,7 +31,7 @@ namespace PostprocessEditor.WindowsForms
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmTextureName = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Value3 = new System.Windows.Forms.NumericUpDown();
             this.Label3 = new System.Windows.Forms.Label();
             this.Value2 = new System.Windows.Forms.NumericUpDown();
             this.Label2 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@ namespace PostprocessEditor.WindowsForms
             this.TimeValue = new System.Windows.Forms.NumericUpDown();
             this.MxLabel1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Value3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Value2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Value1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeValue)).BeginInit();
@@ -49,7 +49,7 @@ namespace PostprocessEditor.WindowsForms
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cmTextureName);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.Value3);
             this.groupBox1.Controls.Add(this.Label3);
             this.groupBox1.Controls.Add(this.Value2);
             this.groupBox1.Controls.Add(this.Label2);
@@ -72,21 +72,21 @@ namespace PostprocessEditor.WindowsForms
             this.cmTextureName.TabIndex = 8;
             this.cmTextureName.Text = "cmTextureName";
             // 
-            // numericUpDown1
+            // Value3
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Location = new System.Drawing.Point(86, 89);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(93, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Value3.DecimalPlaces = 2;
+            this.Value3.Location = new System.Drawing.Point(86, 89);
+            this.Value3.Name = "Value3";
+            this.Value3.Size = new System.Drawing.Size(93, 20);
+            this.Value3.TabIndex = 7;
+            this.Value3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Label3
             // 
             this.Label3.ForeColor = System.Drawing.Color.Blue;
             this.Label3.Location = new System.Drawing.Point(12, 91);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(34, 13);
+            this.Label3.Size = new System.Drawing.Size(70, 13);
             this.Label3.TabIndex = 6;
             this.Label3.Text = "Value";
             // 
@@ -109,7 +109,7 @@ namespace PostprocessEditor.WindowsForms
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.Label2.Location = new System.Drawing.Point(12, 69);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(34, 13);
+            this.Label2.Size = new System.Drawing.Size(70, 13);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "Value";
             // 
@@ -132,7 +132,7 @@ namespace PostprocessEditor.WindowsForms
             this.Label1.ForeColor = System.Drawing.Color.Red;
             this.Label1.Location = new System.Drawing.Point(12, 47);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(34, 13);
+            this.Label1.Size = new System.Drawing.Size(70, 13);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "Value";
             // 
@@ -167,7 +167,7 @@ namespace PostprocessEditor.WindowsForms
             this.Name = "AddFloatForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Value3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Value2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Value1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeValue)).EndInit();
@@ -180,7 +180,7 @@ namespace PostprocessEditor.WindowsForms
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label MxLabel1;
         private System.Windows.Forms.TextBox cmTextureName;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown Value3;
         private System.Windows.Forms.Label Label3;
         private System.Windows.Forms.NumericUpDown Value2;
         private System.Windows.Forms.Label Label2;

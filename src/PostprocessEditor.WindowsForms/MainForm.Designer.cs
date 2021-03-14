@@ -63,10 +63,45 @@ namespace PostprocessEditor.WindowsForms
             this.PointList2 = new System.Windows.Forms.ListBox();
             this.RxLabel2 = new System.Windows.Forms.Label();
             this.GrayColorTabPage = new System.Windows.Forms.TabPage();
+            this.WorkArea3 = new System.Windows.Forms.Panel();
+            this.CopyFrom3 = new System.Windows.Forms.Button();
+            this.ClearAll3 = new System.Windows.Forms.Button();
+            this.RemoveKey3 = new System.Windows.Forms.Button();
+            this.AddKey3 = new System.Windows.Forms.Button();
+            this.PointList3 = new System.Windows.Forms.ListBox();
+            this.RxLabel3 = new System.Windows.Forms.Label();
             this.DualityTabPage = new System.Windows.Forms.TabPage();
+            this.WorkArea4 = new System.Windows.Forms.Panel();
+            this.CopyFrom4 = new System.Windows.Forms.Button();
+            this.ClearAll4 = new System.Windows.Forms.Button();
+            this.RemoveKey4 = new System.Windows.Forms.Button();
+            this.AddKey4 = new System.Windows.Forms.Button();
+            this.PointList4 = new System.Windows.Forms.ListBox();
+            this.RxLabel4 = new System.Windows.Forms.Label();
             this.NoiseTabPage = new System.Windows.Forms.TabPage();
+            this.WorkArea5 = new System.Windows.Forms.Panel();
+            this.CopyFrom5 = new System.Windows.Forms.Button();
+            this.ClearAll5 = new System.Windows.Forms.Button();
+            this.RemoveKey5 = new System.Windows.Forms.Button();
+            this.AddKey5 = new System.Windows.Forms.Button();
+            this.PointList5 = new System.Windows.Forms.ListBox();
+            this.RxLabel5 = new System.Windows.Forms.Label();
             this.BlurTabPage = new System.Windows.Forms.TabPage();
+            this.WorkArea6 = new System.Windows.Forms.Panel();
+            this.CopyFrom6 = new System.Windows.Forms.Button();
+            this.ClearAll6 = new System.Windows.Forms.Button();
+            this.RemoveKey6 = new System.Windows.Forms.Button();
+            this.AddKey6 = new System.Windows.Forms.Button();
+            this.PointList6 = new System.Windows.Forms.ListBox();
+            this.RxLabel6 = new System.Windows.Forms.Label();
             this.ColorMapperTabPage = new System.Windows.Forms.TabPage();
+            this.WorkArea7 = new System.Windows.Forms.Panel();
+            this.CopyFrom7 = new System.Windows.Forms.Button();
+            this.ClearAll7 = new System.Windows.Forms.Button();
+            this.RemoveKey7 = new System.Windows.Forms.Button();
+            this.AddKey7 = new System.Windows.Forms.Button();
+            this.PointList7 = new System.Windows.Forms.ListBox();
+            this.RxLabel7 = new System.Windows.Forms.Label();
             this.Image = new System.Windows.Forms.PictureBox();
             this.MainMenu.SuspendLayout();
             this.ToolBar.SuspendLayout();
@@ -74,6 +109,11 @@ namespace PostprocessEditor.WindowsForms
             this.TabControl.SuspendLayout();
             this.AddColorTabPage.SuspendLayout();
             this.BaseColorTabPage.SuspendLayout();
+            this.GrayColorTabPage.SuspendLayout();
+            this.DualityTabPage.SuspendLayout();
+            this.NoiseTabPage.SuspendLayout();
+            this.BlurTabPage.SuspendLayout();
+            this.ColorMapperTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             this.SuspendLayout();
             // 
@@ -374,6 +414,13 @@ namespace PostprocessEditor.WindowsForms
             // 
             // GrayColorTabPage
             // 
+            this.GrayColorTabPage.Controls.Add(this.WorkArea3);
+            this.GrayColorTabPage.Controls.Add(this.CopyFrom3);
+            this.GrayColorTabPage.Controls.Add(this.ClearAll3);
+            this.GrayColorTabPage.Controls.Add(this.RemoveKey3);
+            this.GrayColorTabPage.Controls.Add(this.AddKey3);
+            this.GrayColorTabPage.Controls.Add(this.PointList3);
+            this.GrayColorTabPage.Controls.Add(this.RxLabel3);
             this.GrayColorTabPage.Location = new System.Drawing.Point(4, 22);
             this.GrayColorTabPage.Name = "GrayColorTabPage";
             this.GrayColorTabPage.Size = new System.Drawing.Size(793, 225);
@@ -381,8 +428,74 @@ namespace PostprocessEditor.WindowsForms
             this.GrayColorTabPage.Text = "Gray color";
             this.GrayColorTabPage.UseVisualStyleBackColor = true;
             // 
+            // WorkArea3
+            // 
+            this.WorkArea3.Location = new System.Drawing.Point(156, 6);
+            this.WorkArea3.Name = "WorkArea3";
+            this.WorkArea3.Size = new System.Drawing.Size(628, 216);
+            this.WorkArea3.TabIndex = 8;
+            // 
+            // CopyFrom3
+            // 
+            this.CopyFrom3.Location = new System.Drawing.Point(88, 200);
+            this.CopyFrom3.Name = "CopyFrom3";
+            this.CopyFrom3.Size = new System.Drawing.Size(62, 21);
+            this.CopyFrom3.TabIndex = 7;
+            this.CopyFrom3.Text = "CopyFrom";
+            this.CopyFrom3.UseVisualStyleBackColor = true;
+            // 
+            // ClearAll3
+            // 
+            this.ClearAll3.Location = new System.Drawing.Point(46, 200);
+            this.ClearAll3.Name = "ClearAll3";
+            this.ClearAll3.Size = new System.Drawing.Size(39, 21);
+            this.ClearAll3.TabIndex = 6;
+            this.ClearAll3.Text = "Clear";
+            this.ClearAll3.UseVisualStyleBackColor = true;
+            // 
+            // RemoveKey3
+            // 
+            this.RemoveKey3.Location = new System.Drawing.Point(26, 200);
+            this.RemoveKey3.Name = "RemoveKey3";
+            this.RemoveKey3.Size = new System.Drawing.Size(17, 21);
+            this.RemoveKey3.TabIndex = 5;
+            this.RemoveKey3.Text = "-";
+            this.RemoveKey3.UseVisualStyleBackColor = true;
+            // 
+            // AddKey3
+            // 
+            this.AddKey3.Location = new System.Drawing.Point(6, 200);
+            this.AddKey3.Name = "AddKey3";
+            this.AddKey3.Size = new System.Drawing.Size(17, 21);
+            this.AddKey3.TabIndex = 4;
+            this.AddKey3.Text = "+";
+            this.AddKey3.UseVisualStyleBackColor = true;
+            // 
+            // PointList3
+            // 
+            this.PointList3.FormattingEnabled = true;
+            this.PointList3.Location = new System.Drawing.Point(6, 22);
+            this.PointList3.Name = "PointList3";
+            this.PointList3.Size = new System.Drawing.Size(144, 173);
+            this.PointList3.TabIndex = 3;
+            // 
+            // RxLabel3
+            // 
+            this.RxLabel3.Location = new System.Drawing.Point(28, 6);
+            this.RxLabel3.Name = "RxLabel3";
+            this.RxLabel3.Size = new System.Drawing.Size(48, 13);
+            this.RxLabel3.TabIndex = 2;
+            this.RxLabel3.Text = "Point list";
+            // 
             // DualityTabPage
             // 
+            this.DualityTabPage.Controls.Add(this.WorkArea4);
+            this.DualityTabPage.Controls.Add(this.CopyFrom4);
+            this.DualityTabPage.Controls.Add(this.ClearAll4);
+            this.DualityTabPage.Controls.Add(this.RemoveKey4);
+            this.DualityTabPage.Controls.Add(this.AddKey4);
+            this.DualityTabPage.Controls.Add(this.PointList4);
+            this.DualityTabPage.Controls.Add(this.RxLabel4);
             this.DualityTabPage.Location = new System.Drawing.Point(4, 22);
             this.DualityTabPage.Name = "DualityTabPage";
             this.DualityTabPage.Size = new System.Drawing.Size(793, 225);
@@ -390,8 +503,74 @@ namespace PostprocessEditor.WindowsForms
             this.DualityTabPage.Text = "Duality";
             this.DualityTabPage.UseVisualStyleBackColor = true;
             // 
+            // WorkArea4
+            // 
+            this.WorkArea4.Location = new System.Drawing.Point(156, 6);
+            this.WorkArea4.Name = "WorkArea4";
+            this.WorkArea4.Size = new System.Drawing.Size(628, 216);
+            this.WorkArea4.TabIndex = 9;
+            // 
+            // CopyFrom4
+            // 
+            this.CopyFrom4.Location = new System.Drawing.Point(88, 200);
+            this.CopyFrom4.Name = "CopyFrom4";
+            this.CopyFrom4.Size = new System.Drawing.Size(62, 21);
+            this.CopyFrom4.TabIndex = 8;
+            this.CopyFrom4.Text = "CopyFrom";
+            this.CopyFrom4.UseVisualStyleBackColor = true;
+            // 
+            // ClearAll4
+            // 
+            this.ClearAll4.Location = new System.Drawing.Point(46, 200);
+            this.ClearAll4.Name = "ClearAll4";
+            this.ClearAll4.Size = new System.Drawing.Size(39, 21);
+            this.ClearAll4.TabIndex = 7;
+            this.ClearAll4.Text = "Clear";
+            this.ClearAll4.UseVisualStyleBackColor = true;
+            // 
+            // RemoveKey4
+            // 
+            this.RemoveKey4.Location = new System.Drawing.Point(26, 200);
+            this.RemoveKey4.Name = "RemoveKey4";
+            this.RemoveKey4.Size = new System.Drawing.Size(17, 21);
+            this.RemoveKey4.TabIndex = 6;
+            this.RemoveKey4.Text = "-";
+            this.RemoveKey4.UseVisualStyleBackColor = true;
+            // 
+            // AddKey4
+            // 
+            this.AddKey4.Location = new System.Drawing.Point(6, 200);
+            this.AddKey4.Name = "AddKey4";
+            this.AddKey4.Size = new System.Drawing.Size(17, 21);
+            this.AddKey4.TabIndex = 5;
+            this.AddKey4.Text = "+";
+            this.AddKey4.UseVisualStyleBackColor = true;
+            // 
+            // PointList4
+            // 
+            this.PointList4.FormattingEnabled = true;
+            this.PointList4.Location = new System.Drawing.Point(6, 22);
+            this.PointList4.Name = "PointList4";
+            this.PointList4.Size = new System.Drawing.Size(144, 173);
+            this.PointList4.TabIndex = 4;
+            // 
+            // RxLabel4
+            // 
+            this.RxLabel4.Location = new System.Drawing.Point(28, 6);
+            this.RxLabel4.Name = "RxLabel4";
+            this.RxLabel4.Size = new System.Drawing.Size(48, 13);
+            this.RxLabel4.TabIndex = 3;
+            this.RxLabel4.Text = "Point list";
+            // 
             // NoiseTabPage
             // 
+            this.NoiseTabPage.Controls.Add(this.WorkArea5);
+            this.NoiseTabPage.Controls.Add(this.CopyFrom5);
+            this.NoiseTabPage.Controls.Add(this.ClearAll5);
+            this.NoiseTabPage.Controls.Add(this.RemoveKey5);
+            this.NoiseTabPage.Controls.Add(this.AddKey5);
+            this.NoiseTabPage.Controls.Add(this.PointList5);
+            this.NoiseTabPage.Controls.Add(this.RxLabel5);
             this.NoiseTabPage.Location = new System.Drawing.Point(4, 22);
             this.NoiseTabPage.Name = "NoiseTabPage";
             this.NoiseTabPage.Size = new System.Drawing.Size(793, 225);
@@ -399,8 +578,74 @@ namespace PostprocessEditor.WindowsForms
             this.NoiseTabPage.Text = "Noise";
             this.NoiseTabPage.UseVisualStyleBackColor = true;
             // 
+            // WorkArea5
+            // 
+            this.WorkArea5.Location = new System.Drawing.Point(156, 6);
+            this.WorkArea5.Name = "WorkArea5";
+            this.WorkArea5.Size = new System.Drawing.Size(628, 216);
+            this.WorkArea5.TabIndex = 10;
+            // 
+            // CopyFrom5
+            // 
+            this.CopyFrom5.Location = new System.Drawing.Point(88, 200);
+            this.CopyFrom5.Name = "CopyFrom5";
+            this.CopyFrom5.Size = new System.Drawing.Size(62, 21);
+            this.CopyFrom5.TabIndex = 9;
+            this.CopyFrom5.Text = "CopyFrom";
+            this.CopyFrom5.UseVisualStyleBackColor = true;
+            // 
+            // ClearAll5
+            // 
+            this.ClearAll5.Location = new System.Drawing.Point(46, 200);
+            this.ClearAll5.Name = "ClearAll5";
+            this.ClearAll5.Size = new System.Drawing.Size(39, 21);
+            this.ClearAll5.TabIndex = 8;
+            this.ClearAll5.Text = "Clear";
+            this.ClearAll5.UseVisualStyleBackColor = true;
+            // 
+            // RemoveKey5
+            // 
+            this.RemoveKey5.Location = new System.Drawing.Point(26, 200);
+            this.RemoveKey5.Name = "RemoveKey5";
+            this.RemoveKey5.Size = new System.Drawing.Size(17, 21);
+            this.RemoveKey5.TabIndex = 7;
+            this.RemoveKey5.Text = "-";
+            this.RemoveKey5.UseVisualStyleBackColor = true;
+            // 
+            // AddKey5
+            // 
+            this.AddKey5.Location = new System.Drawing.Point(6, 200);
+            this.AddKey5.Name = "AddKey5";
+            this.AddKey5.Size = new System.Drawing.Size(17, 21);
+            this.AddKey5.TabIndex = 6;
+            this.AddKey5.Text = "+";
+            this.AddKey5.UseVisualStyleBackColor = true;
+            // 
+            // PointList5
+            // 
+            this.PointList5.FormattingEnabled = true;
+            this.PointList5.Location = new System.Drawing.Point(6, 22);
+            this.PointList5.Name = "PointList5";
+            this.PointList5.Size = new System.Drawing.Size(144, 173);
+            this.PointList5.TabIndex = 5;
+            // 
+            // RxLabel5
+            // 
+            this.RxLabel5.Location = new System.Drawing.Point(28, 6);
+            this.RxLabel5.Name = "RxLabel5";
+            this.RxLabel5.Size = new System.Drawing.Size(48, 13);
+            this.RxLabel5.TabIndex = 4;
+            this.RxLabel5.Text = "Point list";
+            // 
             // BlurTabPage
             // 
+            this.BlurTabPage.Controls.Add(this.WorkArea6);
+            this.BlurTabPage.Controls.Add(this.CopyFrom6);
+            this.BlurTabPage.Controls.Add(this.ClearAll6);
+            this.BlurTabPage.Controls.Add(this.RemoveKey6);
+            this.BlurTabPage.Controls.Add(this.AddKey6);
+            this.BlurTabPage.Controls.Add(this.PointList6);
+            this.BlurTabPage.Controls.Add(this.RxLabel6);
             this.BlurTabPage.Location = new System.Drawing.Point(4, 22);
             this.BlurTabPage.Name = "BlurTabPage";
             this.BlurTabPage.Size = new System.Drawing.Size(793, 225);
@@ -408,14 +653,139 @@ namespace PostprocessEditor.WindowsForms
             this.BlurTabPage.Text = "Blur";
             this.BlurTabPage.UseVisualStyleBackColor = true;
             // 
+            // WorkArea6
+            // 
+            this.WorkArea6.Location = new System.Drawing.Point(156, 6);
+            this.WorkArea6.Name = "WorkArea6";
+            this.WorkArea6.Size = new System.Drawing.Size(628, 216);
+            this.WorkArea6.TabIndex = 11;
+            // 
+            // CopyFrom6
+            // 
+            this.CopyFrom6.Location = new System.Drawing.Point(88, 200);
+            this.CopyFrom6.Name = "CopyFrom6";
+            this.CopyFrom6.Size = new System.Drawing.Size(62, 21);
+            this.CopyFrom6.TabIndex = 10;
+            this.CopyFrom6.Text = "CopyFrom";
+            this.CopyFrom6.UseVisualStyleBackColor = true;
+            // 
+            // ClearAll6
+            // 
+            this.ClearAll6.Location = new System.Drawing.Point(46, 200);
+            this.ClearAll6.Name = "ClearAll6";
+            this.ClearAll6.Size = new System.Drawing.Size(39, 21);
+            this.ClearAll6.TabIndex = 9;
+            this.ClearAll6.Text = "Clear";
+            this.ClearAll6.UseVisualStyleBackColor = true;
+            // 
+            // RemoveKey6
+            // 
+            this.RemoveKey6.Location = new System.Drawing.Point(26, 200);
+            this.RemoveKey6.Name = "RemoveKey6";
+            this.RemoveKey6.Size = new System.Drawing.Size(17, 21);
+            this.RemoveKey6.TabIndex = 8;
+            this.RemoveKey6.Text = "-";
+            this.RemoveKey6.UseVisualStyleBackColor = true;
+            // 
+            // AddKey6
+            // 
+            this.AddKey6.Location = new System.Drawing.Point(6, 200);
+            this.AddKey6.Name = "AddKey6";
+            this.AddKey6.Size = new System.Drawing.Size(17, 21);
+            this.AddKey6.TabIndex = 7;
+            this.AddKey6.Text = "+";
+            this.AddKey6.UseVisualStyleBackColor = true;
+            // 
+            // PointList6
+            // 
+            this.PointList6.FormattingEnabled = true;
+            this.PointList6.Location = new System.Drawing.Point(6, 22);
+            this.PointList6.Name = "PointList6";
+            this.PointList6.Size = new System.Drawing.Size(144, 173);
+            this.PointList6.TabIndex = 6;
+            // 
+            // RxLabel6
+            // 
+            this.RxLabel6.Location = new System.Drawing.Point(28, 6);
+            this.RxLabel6.Name = "RxLabel6";
+            this.RxLabel6.Size = new System.Drawing.Size(48, 13);
+            this.RxLabel6.TabIndex = 5;
+            this.RxLabel6.Text = "Point list";
+            // 
             // ColorMapperTabPage
             // 
+            this.ColorMapperTabPage.Controls.Add(this.WorkArea7);
+            this.ColorMapperTabPage.Controls.Add(this.CopyFrom7);
+            this.ColorMapperTabPage.Controls.Add(this.ClearAll7);
+            this.ColorMapperTabPage.Controls.Add(this.RemoveKey7);
+            this.ColorMapperTabPage.Controls.Add(this.AddKey7);
+            this.ColorMapperTabPage.Controls.Add(this.PointList7);
+            this.ColorMapperTabPage.Controls.Add(this.RxLabel7);
             this.ColorMapperTabPage.Location = new System.Drawing.Point(4, 22);
             this.ColorMapperTabPage.Name = "ColorMapperTabPage";
             this.ColorMapperTabPage.Size = new System.Drawing.Size(793, 225);
             this.ColorMapperTabPage.TabIndex = 6;
             this.ColorMapperTabPage.Text = "ColorMapper";
             this.ColorMapperTabPage.UseVisualStyleBackColor = true;
+            // 
+            // WorkArea7
+            // 
+            this.WorkArea7.Location = new System.Drawing.Point(156, 6);
+            this.WorkArea7.Name = "WorkArea7";
+            this.WorkArea7.Size = new System.Drawing.Size(628, 216);
+            this.WorkArea7.TabIndex = 12;
+            // 
+            // CopyFrom7
+            // 
+            this.CopyFrom7.Location = new System.Drawing.Point(88, 200);
+            this.CopyFrom7.Name = "CopyFrom7";
+            this.CopyFrom7.Size = new System.Drawing.Size(62, 21);
+            this.CopyFrom7.TabIndex = 11;
+            this.CopyFrom7.Text = "CopyFrom";
+            this.CopyFrom7.UseVisualStyleBackColor = true;
+            // 
+            // ClearAll7
+            // 
+            this.ClearAll7.Location = new System.Drawing.Point(46, 200);
+            this.ClearAll7.Name = "ClearAll7";
+            this.ClearAll7.Size = new System.Drawing.Size(39, 21);
+            this.ClearAll7.TabIndex = 10;
+            this.ClearAll7.Text = "Clear";
+            this.ClearAll7.UseVisualStyleBackColor = true;
+            // 
+            // RemoveKey7
+            // 
+            this.RemoveKey7.Location = new System.Drawing.Point(26, 200);
+            this.RemoveKey7.Name = "RemoveKey7";
+            this.RemoveKey7.Size = new System.Drawing.Size(17, 21);
+            this.RemoveKey7.TabIndex = 9;
+            this.RemoveKey7.Text = "-";
+            this.RemoveKey7.UseVisualStyleBackColor = true;
+            // 
+            // AddKey7
+            // 
+            this.AddKey7.Location = new System.Drawing.Point(6, 200);
+            this.AddKey7.Name = "AddKey7";
+            this.AddKey7.Size = new System.Drawing.Size(17, 21);
+            this.AddKey7.TabIndex = 8;
+            this.AddKey7.Text = "+";
+            this.AddKey7.UseVisualStyleBackColor = true;
+            // 
+            // PointList7
+            // 
+            this.PointList7.FormattingEnabled = true;
+            this.PointList7.Location = new System.Drawing.Point(6, 22);
+            this.PointList7.Name = "PointList7";
+            this.PointList7.Size = new System.Drawing.Size(144, 173);
+            this.PointList7.TabIndex = 7;
+            // 
+            // RxLabel7
+            // 
+            this.RxLabel7.Location = new System.Drawing.Point(28, 6);
+            this.RxLabel7.Name = "RxLabel7";
+            this.RxLabel7.Size = new System.Drawing.Size(48, 13);
+            this.RxLabel7.TabIndex = 6;
+            this.RxLabel7.Text = "Point list";
             // 
             // Image
             // 
@@ -439,7 +809,7 @@ namespace PostprocessEditor.WindowsForms
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "Postprocess Editor";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
@@ -450,6 +820,11 @@ namespace PostprocessEditor.WindowsForms
             this.TabControl.ResumeLayout(false);
             this.AddColorTabPage.ResumeLayout(false);
             this.BaseColorTabPage.ResumeLayout(false);
+            this.GrayColorTabPage.ResumeLayout(false);
+            this.DualityTabPage.ResumeLayout(false);
+            this.NoiseTabPage.ResumeLayout(false);
+            this.BlurTabPage.ResumeLayout(false);
+            this.ColorMapperTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -496,6 +871,41 @@ namespace PostprocessEditor.WindowsForms
         private System.Windows.Forms.Button ClearAll2;
         private System.Windows.Forms.Button CopyFrom2;
         private System.Windows.Forms.Panel WorkArea2;
+        private System.Windows.Forms.Panel WorkArea3;
+        private System.Windows.Forms.Button CopyFrom3;
+        private System.Windows.Forms.Button ClearAll3;
+        private System.Windows.Forms.Button RemoveKey3;
+        private System.Windows.Forms.Button AddKey3;
+        private System.Windows.Forms.ListBox PointList3;
+        private System.Windows.Forms.Label RxLabel3;
+        private System.Windows.Forms.Panel WorkArea4;
+        private System.Windows.Forms.Button CopyFrom4;
+        private System.Windows.Forms.Button ClearAll4;
+        private System.Windows.Forms.Button RemoveKey4;
+        private System.Windows.Forms.Button AddKey4;
+        private System.Windows.Forms.ListBox PointList4;
+        private System.Windows.Forms.Label RxLabel4;
+        private System.Windows.Forms.Panel WorkArea5;
+        private System.Windows.Forms.Button CopyFrom5;
+        private System.Windows.Forms.Button ClearAll5;
+        private System.Windows.Forms.Button RemoveKey5;
+        private System.Windows.Forms.Button AddKey5;
+        private System.Windows.Forms.ListBox PointList5;
+        private System.Windows.Forms.Label RxLabel5;
+        private System.Windows.Forms.Panel WorkArea6;
+        private System.Windows.Forms.Button CopyFrom6;
+        private System.Windows.Forms.Button ClearAll6;
+        private System.Windows.Forms.Button RemoveKey6;
+        private System.Windows.Forms.Button AddKey6;
+        private System.Windows.Forms.ListBox PointList6;
+        private System.Windows.Forms.Label RxLabel6;
+        private System.Windows.Forms.Panel WorkArea7;
+        private System.Windows.Forms.Button CopyFrom7;
+        private System.Windows.Forms.Button ClearAll7;
+        private System.Windows.Forms.Button RemoveKey7;
+        private System.Windows.Forms.Button AddKey7;
+        private System.Windows.Forms.ListBox PointList7;
+        private System.Windows.Forms.Label RxLabel7;
     }
 }
 
