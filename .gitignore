@@ -2,3 +2,11 @@
 
 # Visual C++ cache and options
 .vs/
+
+# Visual Studio user settings
+*.suo
+*.user
+
+# Build results
+obj/
+bin/
