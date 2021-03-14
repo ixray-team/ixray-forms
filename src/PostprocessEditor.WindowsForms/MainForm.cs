@@ -2,9 +2,9 @@
 
 namespace PostprocessEditor.WindowsForms
 {
-    public partial class main : Form
+    public partial class MainForm : Form
     {
-        public main()
+        public MainForm()
         {
             InitializeComponent();
         }
