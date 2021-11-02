@@ -1,0 +1,17 @@
+# Use config from the root
+root = true
+
+# Visual Studio solution settings
+[*.sln]
+charset = utf-8-bom
+indent_style = tab
+end_of_line = crlf
+insert_final_newline = true
+
+# Visual C# file settings
+[*.cs]
+# IDE0008: Using an explicit type
+csharp_style_var_when_type_is_apparent = true
+# IDE0130: The namespace does not match folder structure
+dotnet_style_namespace_match_folder = false
+dotnet_diagnostic.IDE0130.severity = none
