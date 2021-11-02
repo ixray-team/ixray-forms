@@ -77,8 +77,8 @@
                         </Grid.ColumnDefinitions>
 
                         <v:PointListUserControl Grid.Column="0" />
-
-                        <Grid Grid.Column="1" />
+                        <v:AddColorUserControl Grid.Column="1"
+                                               DataContext="{Binding Path=AddColorViewModels[0]}" />
                     </Grid>
                 </TabItem>
 
@@ -90,8 +90,8 @@
                         </Grid.ColumnDefinitions>
 
                         <v:PointListUserControl Grid.Column="0" />
-
-                        <Grid Grid.Column="1" />
+                        <v:AddColorUserControl Grid.Column="1"
+                                               DataContext="{Binding Path=AddColorViewModels[1]}"/>
                     </Grid>
                 </TabItem>
 
@@ -103,8 +103,8 @@
                         </Grid.ColumnDefinitions>
 
                         <v:PointListUserControl Grid.Column="0" />
-
-                        <Grid Grid.Column="1" />
+                        <v:AddColorUserControl Grid.Column="1"
+                                               DataContext="{Binding Path=AddColorViewModels[2]}" />
                     </Grid>
                 </TabItem>
 
@@ -142,8 +142,8 @@
                         </Grid.ColumnDefinitions>
 
                         <v:PointListUserControl Grid.Column="0" />
-
-                        <Grid Grid.Column="1" />
+                        <v:AddColorUserControl Grid.Column="1"
+                                               DataContext="{Binding Path=AddColorViewModels[3]}" />
                     </Grid>
                 </TabItem>
 

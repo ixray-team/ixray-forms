@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
 
 using Microsoft.Win32;
@@ -32,5 +33,33 @@ namespace PostprocessEditor.ViewModels {
             };
             _ = saveFileDialog.ShowDialog();
         });
+
+        private ObservableCollection<AddColorViewModel> addColorViewModels = new ObservableCollection<AddColorViewModel> {
+            // Add color
+            new AddColorViewModel(),
+            // Base color
+            new AddColorViewModel(),
+            // Gray color
+            new AddColorViewModel {
+                ItensityLabelVisibility = Visibility.Visible,
+                ItensityTextBoxVisibility = Visibility.Visible
+            },
+            // Blur
+            new AddColorViewModel {
+                ItensityLabelVisibility = Visibility.Visible,
+                ItensityTextBoxVisibility = Visibility.Visible
+            }
+        };
+        public ObservableCollection<AddColorViewModel> AddColorViewModels {
+            get {
+                return addColorViewModels;
+            }
+            set {
+                if (addColorViewModels != value) {
+                    addColorViewModels = value;
+                    NotifyPropertyChanged(nameof(AddColorViewModels));
+                }
+            }
+        }
     }
 }

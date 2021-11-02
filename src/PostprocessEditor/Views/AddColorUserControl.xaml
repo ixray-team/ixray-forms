@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="PostprocessEditor.Views.AddColorUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:l="clr-namespace:PostprocessEditor"
+             xmlns:vm="clr-namespace:PostprocessEditor.ViewModels"
+             mc:Ignorable="d"
+             d:DesignHeight="200"
+             d:DesignWidth="215">
+    <UserControl.DataContext>
+        <vm:AddColorViewModel />
+    </UserControl.DataContext>
+    
+    <WrapPanel>
+        <GroupBox Header="Color">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Content="Key Time(sec)"
+                       Grid.Column="0"
+                       Grid.Row="0" />
+                <TextBox Text="0,00"
+                         Grid.Column="1"
+                         Grid.Row="0"
+                         Height="20"
+                         Width="100"
+                         Margin="2" />
+
+                <Label Content="R"
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Foreground="Red" />
+                <TextBox Text="0,00"
+                         Grid.Column="1"
+                         Grid.Row="1"
+                         Height="20"
+                         Width="100"
+                         Margin="2" />
+                <Label Content="G"
+                       Grid.Column="0"
+                       Grid.Row="2"
+                       Foreground="Green" />
+                <TextBox Text="0,00"
+                         Grid.Column="1"
+                         Grid.Row="2"
+                         Height="20"
+                         Width="100"
+                         Margin="2" />
+                <Label Content="B"
+                       Grid.Column="0"
+                       Grid.Row="3"
+                       Foreground="Blue" />
+                <TextBox Text="0,00"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Height="20"
+                         Width="100"
+                         Margin="2" />
+
+                <Label Content="Itensity"
+                       Grid.Column="0"
+                       Grid.Row="4"
+                       Visibility="{Binding Path=ItensityLabelVisibility}" />
+                <TextBox Text="0,00"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Height="20"
+                         Width="100"
+                         Margin="2"
+                         Visibility="{Binding Path=ItensityTextBoxVisibility}" />
+
+                <Button Grid.Column="0"
+                        Grid.Row="5"
+                        Width="50"
+                        Height="20"
+                        HorizontalAlignment="Left"
+                        Command="{Binding Path=SetColorCommand}" />
+            </Grid>
+        </GroupBox>
+    </WrapPanel>
+</UserControl>
