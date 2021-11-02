@@ -1,5 +1,15 @@
 # IX-Ray Forms
 
+<!-- markdownlint-disable MD033 -->
+<div align="center">
+  <p>
+    <a href="https://github.com/ixray-team">
+      <img src="https://github.com/ixray-team/ixray/raw/default/logo.png" alt="IX-Ray Team" width="150" height="150" />
+    </a>
+  </p>
+</div>
+<!-- markdownlint-enable MD033 -->
+
 Layouts with a recreated interface of *X-Ray* editors and utilities
 
 ## Overview
