@@ -12,6 +12,8 @@ insert_final_newline = true
 [*.cs]
 # IDE0008: Using an explicit type
 csharp_style_var_when_type_is_apparent = true
+# IDE0027: Use the expression body for access methods
+csharp_style_expression_bodied_accessors = false
 # IDE0130: The namespace does not match folder structure
 dotnet_style_namespace_match_folder = false
 dotnet_diagnostic.IDE0130.severity = none
