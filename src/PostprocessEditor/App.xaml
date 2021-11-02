@@ -1,8 +1,7 @@
-﻿<Application x:Class="PostprocessEditor.App" 
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-             xmlns:local="clr-namespace:PostprocessEditor" 
-             StartupUri="MainWindow.xaml">
+﻿<Application x:Class="PostprocessEditor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l="clr-namespace:PostprocessEditor">
     <Application.Resources>
     </Application.Resources>
 </Application>
