@@ -20,7 +20,7 @@ namespace PostprocessEditor.ViewModels {
             PropertyChanged?.Invoke(this, eventArgs);
         }
 
-        protected void NotifyPropertyChanged(string propertyName) {
+        public void NotifyPropertyChanged(string propertyName) {
             VerifyPropertyName(propertyName);
             NotifyPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
