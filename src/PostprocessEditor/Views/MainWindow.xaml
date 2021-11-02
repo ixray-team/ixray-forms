@@ -1,0 +1,169 @@
+﻿<Window x:Class="PostprocessEditor.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:l="clr-namespace:PostprocessEditor"
+        xmlns:v="clr-namespace:PostprocessEditor.Views"
+        xmlns:vm="clr-namespace:PostprocessEditor.ViewModels"
+        mc:Ignorable="d"
+        Title="PostprocessEditor"
+        Height="750"
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="File"
+                      Margin="5">
+                <MenuItem Header="New"
+                          Command="{Binding Path=NewFileCommand}"
+                          InputGestureText="Ctrl+N" />
+
+                <Separator />
+
+                <MenuItem Header="Load"
+                          Command="{Binding Path=LoadFileCommand}"
+                          InputGestureText="Ctrl+O}" />
+                <MenuItem Header="Save"
+                          Command="{Binding Path=SaveFileCommand}"
+                          InputGestureText="Ctrl+S" />
+            </MenuItem>
+        </Menu>
+
+        <ToolBar Grid.Row="1">
+            <Button Command="{Binding Path=NewFileCommand}"
+                    Height="23"
+                    Width="23"
+                    Margin="1"/>
+
+            <Separator />
+
+            <Button Command="{Binding Path=LoadFileCommand}"
+                    Height="23"
+                    Width="23"
+                    Margin="1" />
+            <Button Command="{Binding Path=SaveFileCommand}"
+                    Height="23"
+                    Width="23"
+                    Margin="1" />
+        </ToolBar>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Canvas Grid.Row="0" />
+
+            <TabControl Grid.Row="1"
+                        Height="250">
+                <TabItem Header="Add color">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Base color">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Gray color">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Duality">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Noise">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Blur">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="ColorMapper">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <v:PointListUserControl Grid.Column="0" />
+
+                        <Grid Grid.Column="1" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+        <StatusBar Grid.Row="3">
+            <Label Content="Effect time : 0.000" />
+        </StatusBar>
+    </Grid>
+</Window>

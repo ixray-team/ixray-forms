@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PostprocessEditor {
+namespace PostprocessEditor.Views {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
