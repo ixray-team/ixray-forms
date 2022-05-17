@@ -1,0 +1,16 @@
+# Global attributes for forcing line endings normalization of specific files
+# This is also used by GitHub Linguist for detecting languages in the repository
+
+* text=auto
+
+# Visual Studio projects and solutions
+*.sln    text eol=crlf encoding=utf-8-bom
+*.csproj text eol=crlf encoding=utf-8     linguist-language=XML
+
+# Source code files
+*.cs   text eol=crlf encoding=utf-8 linguist-language=C#
+*.resx text eol=crlf encoding=utf-8 linguist-language=XML
+*.xaml text eol=crlf encoding=utf-8 linguist-language=XML
+
+# Build scripts
+*.props text eol=crlf encoding=utf-8 linguist-language=XML
