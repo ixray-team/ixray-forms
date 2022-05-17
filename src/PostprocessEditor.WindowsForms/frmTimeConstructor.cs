@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace PostprocessEditor.WindowsForms
+﻿namespace PostprocessEditor.WindowsForms
 {
     public partial class frmTimeConstructor : Form
     {

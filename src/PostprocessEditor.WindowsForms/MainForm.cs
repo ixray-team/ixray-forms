@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace PostprocessEditor.WindowsForms
+﻿namespace PostprocessEditor.WindowsForms
 {
     public partial class MainForm : Form
     {
@@ -99,6 +97,11 @@ namespace PostprocessEditor.WindowsForms
             {
                 WorkArea7.Controls.Add((Control)control);
             }
+        }
+
+        private void AddColorTabPage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

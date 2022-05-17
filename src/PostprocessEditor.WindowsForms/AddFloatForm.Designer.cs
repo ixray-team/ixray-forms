@@ -1,5 +1,4 @@
-﻿
-namespace PostprocessEditor.WindowsForms
+﻿namespace PostprocessEditor.WindowsForms
 {
     partial class AddFloatForm
     {
@@ -59,110 +58,114 @@ namespace PostprocessEditor.WindowsForms
             this.groupBox1.Controls.Add(this.MxLabel1);
             this.groupBox1.Location = new System.Drawing.Point(4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(185, 213);
+            this.groupBox1.Size = new System.Drawing.Size(214, 179);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Node data";
             // 
             // cmTextureName
             // 
-            this.cmTextureName.Location = new System.Drawing.Point(8, 184);
+            this.cmTextureName.Location = new System.Drawing.Point(8, 144);
             this.cmTextureName.Name = "cmTextureName";
-            this.cmTextureName.Size = new System.Drawing.Size(169, 20);
+            this.cmTextureName.Size = new System.Drawing.Size(169, 27);
             this.cmTextureName.TabIndex = 8;
             this.cmTextureName.Text = "cmTextureName";
             // 
             // Value3
             // 
             this.Value3.DecimalPlaces = 2;
-            this.Value3.Location = new System.Drawing.Point(86, 89);
+            this.Value3.Location = new System.Drawing.Point(115, 111);
             this.Value3.Name = "Value3";
-            this.Value3.Size = new System.Drawing.Size(93, 20);
+            this.Value3.Size = new System.Drawing.Size(93, 27);
             this.Value3.TabIndex = 7;
             this.Value3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Label3
             // 
+            this.Label3.AutoSize = true;
             this.Label3.ForeColor = System.Drawing.Color.Blue;
-            this.Label3.Location = new System.Drawing.Point(12, 91);
+            this.Label3.Location = new System.Drawing.Point(8, 113);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(70, 13);
+            this.Label3.Size = new System.Drawing.Size(45, 20);
             this.Label3.TabIndex = 6;
             this.Label3.Text = "Value";
             // 
             // Value2
             // 
             this.Value2.DecimalPlaces = 2;
-            this.Value2.Location = new System.Drawing.Point(86, 67);
+            this.Value2.Location = new System.Drawing.Point(115, 85);
             this.Value2.Maximum = new decimal(new int[] {
             0,
             0,
             0,
             0});
             this.Value2.Name = "Value2";
-            this.Value2.Size = new System.Drawing.Size(93, 20);
+            this.Value2.Size = new System.Drawing.Size(93, 27);
             this.Value2.TabIndex = 5;
             this.Value2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Label2
             // 
+            this.Label2.AutoSize = true;
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.Label2.Location = new System.Drawing.Point(12, 69);
+            this.Label2.Location = new System.Drawing.Point(8, 87);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(70, 13);
+            this.Label2.Size = new System.Drawing.Size(45, 20);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "Value";
             // 
             // Value1
             // 
             this.Value1.DecimalPlaces = 2;
-            this.Value1.Location = new System.Drawing.Point(86, 45);
+            this.Value1.Location = new System.Drawing.Point(115, 59);
             this.Value1.Maximum = new decimal(new int[] {
             0,
             0,
             0,
             0});
             this.Value1.Name = "Value1";
-            this.Value1.Size = new System.Drawing.Size(93, 20);
+            this.Value1.Size = new System.Drawing.Size(93, 27);
             this.Value1.TabIndex = 3;
             this.Value1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Label1
             // 
+            this.Label1.AutoSize = true;
             this.Label1.ForeColor = System.Drawing.Color.Red;
-            this.Label1.Location = new System.Drawing.Point(12, 47);
+            this.Label1.Location = new System.Drawing.Point(8, 61);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(70, 13);
+            this.Label1.Size = new System.Drawing.Size(45, 20);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "Value";
             // 
             // TimeValue
             // 
             this.TimeValue.DecimalPlaces = 2;
-            this.TimeValue.Location = new System.Drawing.Point(86, 11);
+            this.TimeValue.Location = new System.Drawing.Point(115, 26);
             this.TimeValue.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
             this.TimeValue.Name = "TimeValue";
-            this.TimeValue.Size = new System.Drawing.Size(93, 20);
+            this.TimeValue.Size = new System.Drawing.Size(93, 27);
             this.TimeValue.TabIndex = 1;
             this.TimeValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // MxLabel1
             // 
-            this.MxLabel1.Location = new System.Drawing.Point(12, 15);
+            this.MxLabel1.AutoSize = true;
+            this.MxLabel1.Location = new System.Drawing.Point(8, 28);
             this.MxLabel1.Name = "MxLabel1";
-            this.MxLabel1.Size = new System.Drawing.Size(74, 13);
+            this.MxLabel1.Size = new System.Drawing.Size(101, 20);
             this.MxLabel1.TabIndex = 0;
             this.MxLabel1.Text = "Key Time(sec)";
             // 
             // AddFloatForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(195, 233);
+            this.ClientSize = new System.Drawing.Size(224, 188);
             this.Controls.Add(this.groupBox1);
             this.Name = "AddFloatForm";
             this.groupBox1.ResumeLayout(false);

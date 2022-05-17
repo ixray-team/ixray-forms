@@ -1,5 +1,4 @@
-﻿
-namespace PostprocessEditor.WindowsForms
+﻿namespace PostprocessEditor.WindowsForms
 {
     partial class frmConstructor
     {
@@ -53,9 +52,9 @@ namespace PostprocessEditor.WindowsForms
             // 
             // frmConstructor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 95);
+            this.ClientSize = new System.Drawing.Size(385, 100);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
             this.Name = "frmConstructor";
