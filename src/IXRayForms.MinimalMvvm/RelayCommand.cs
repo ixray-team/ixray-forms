@@ -1,41 +1,32 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Windows.Input;
 
-namespace IXRayForms.MinimalMvvm {
-    public class RelayCommand : ICommand {
-        private readonly Action<object> execute;
-        private readonly Predicate<object> canExecute;
+namespace IXRayForms.MinimalMvvm;
 
-        public RelayCommand(Action<object> execute, Predicate<object> canExecute) {
-            this.execute = execute ?? throw new ArgumentNullException(nameof(execute));
-            this.canExecute = canExecute;
-        }
+public class RelayCommand : ICommand {
+    private readonly Action<object?> execute;
+    private readonly Func<object?, bool>? canExecute;
 
-        public RelayCommand(Action<object> execute) : this(execute, null) {
-        }
+    public RelayCommand(Action<object?> execute, Func<object?, bool>? canExecute = null) {
+        this.execute = execute;
+        this.canExecute = canExecute;
+    }
 
-        public RelayCommand() : this(null, null) {
+    public event EventHandler? CanExecuteChanged {
+        add {
+            CommandManager.RequerySuggested += value;
         }
+        remove {
+            CommandManager.RequerySuggested -= value;
+        }
+    }
 
-        #region ICommand
-        public event EventHandler CanExecuteChanged {
-            add {
-                CommandManager.RequerySuggested += value;
-            }
-            remove {
-                CommandManager.RequerySuggested -= value;
-            }
-        }
+    public void Execute(object? parameter) {
+        execute(parameter);
+    }
 
-        public void Execute(object parameter) {
-            execute(parameter);
-        }
-
-        [DebuggerStepThrough]
-        public bool CanExecute(object parameter) {
-            return canExecute == null || canExecute(parameter);
-        }
-        #endregion
+    [DebuggerStepThrough]
+    public bool CanExecute(object? parameter) {
+        return canExecute == null || canExecute(parameter);
     }
 }
