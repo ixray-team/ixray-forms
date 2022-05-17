@@ -1,4 +1,4 @@
-﻿namespace PostprocessEditor.WindowsForms
+namespace PostprocessEditor.WindowsForms
 {
     partial class AddColorForm
     {

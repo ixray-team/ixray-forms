@@ -1,4 +1,4 @@
-﻿namespace PostprocessEditor.WindowsForms;
+namespace PostprocessEditor.WindowsForms;
 
 public static class Program {
     /// <summary>

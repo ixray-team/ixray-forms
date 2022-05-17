@@ -6,9 +6,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E00E67B-7B20-4343-9514-1BDA45E2174F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE.md = LICENSE.md
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostprocessEditor.WindowsForms", "src\PostprocessEditor.WindowsForms\PostprocessEditor.WindowsForms.csproj", "{6B5B28CF-AB11-4112-9EFC-B1855C247C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostprocessEditor.WindowsForms", "src\PostprocessEditor.WindowsForms\PostprocessEditor.WindowsForms.csproj", "{6B5B28CF-AB11-4112-9EFC-B1855C247C3B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostprocessEditor.Wpf", "src\PostprocessEditor.Wpf\PostprocessEditor.Wpf.csproj", "{AFDAC8F7-1A0E-4A86-B0A8-CC79A0FDBAA2}"
 EndProject
