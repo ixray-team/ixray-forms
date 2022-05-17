@@ -2,16 +2,16 @@
 
 using PostprocessEditor.Views;
 
-namespace PostprocessEditor {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application {
-        protected override void OnStartup(StartupEventArgs eventArgs) {
-            base.OnStartup(eventArgs);
+namespace PostprocessEditor;
 
-            var window = new MainWindow();
-            window.Show();
-        }
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application {
+    protected override void OnStartup(StartupEventArgs eventArgs) {
+        base.OnStartup(eventArgs);
+
+        var window = new MainWindow();
+        window.Show();
     }
 }

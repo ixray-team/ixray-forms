@@ -4,61 +4,63 @@ using System.Windows.Input;
 
 using Microsoft.Win32;
 
-namespace PostprocessEditor.ViewModels {
-    public class MainViewModel : ViewModelBase {
-        public MainViewModel() {
-        }
+using IXRayForms.MinimalMvvm;
 
-        private RelayCommand newFileCommand;
-        public ICommand NewFileCommand => newFileCommand ??= new RelayCommand(_ => {
-            _ = MessageBox.Show("Do you wish to create a new effect ?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question);
-        });
+namespace PostprocessEditor.ViewModels;
 
-        private RelayCommand loadFileCommand;
-        public ICommand LoadFileCommand => loadFileCommand ??= new RelayCommand(_ => {
-            var openFileDialog = new OpenFileDialog {
-                DefaultExt = "ppe",
-                Filter = "Postprocess files (*.ppe)|*.ppe|All files (*.*)|*.*",
-                Title = "Open postprocess effect"
-            };
-            _ = openFileDialog.ShowDialog();
-        });
+public class MainViewModel : ViewModelBase {
+    public MainViewModel() {
+    }
 
-        private RelayCommand saveFileCommand;
-        public ICommand SaveFileCommand => saveFileCommand ??= new RelayCommand(_ => {
-            var saveFileDialog = new SaveFileDialog {
-                DefaultExt = "ppe",
-                Filter = "Postprocess files (*.ppe)|*.ppe|All files (*.*)|*.*",
-                Title = "Save postprocess effect"
-            };
-            _ = saveFileDialog.ShowDialog();
-        });
+    private RelayCommand? newFileCommand;
+    public ICommand NewFileCommand => newFileCommand ??= new RelayCommand(_ => {
+        _ = MessageBox.Show("Do you wish to create a new effect ?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question);
+    });
 
-        private ObservableCollection<AddColorViewModel> addColorViewModels = new ObservableCollection<AddColorViewModel> {
-            // Add color
-            new AddColorViewModel(),
-            // Base color
-            new AddColorViewModel(),
-            // Gray color
-            new AddColorViewModel {
-                ItensityLabelVisibility = Visibility.Visible,
-                ItensityTextBoxVisibility = Visibility.Visible
-            },
-            // Blur
-            new AddColorViewModel {
-                ItensityLabelVisibility = Visibility.Visible,
-                ItensityTextBoxVisibility = Visibility.Visible
-            }
+    private RelayCommand? loadFileCommand;
+    public ICommand LoadFileCommand => loadFileCommand ??= new RelayCommand(_ => {
+        var openFileDialog = new OpenFileDialog {
+            DefaultExt = "ppe",
+            Filter = "Postprocess files (*.ppe)|*.ppe|All files (*.*)|*.*",
+            Title = "Open postprocess effect"
         };
-        public ObservableCollection<AddColorViewModel> AddColorViewModels {
-            get {
-                return addColorViewModels;
-            }
-            set {
-                if (addColorViewModels != value) {
-                    addColorViewModels = value;
-                    NotifyPropertyChanged(nameof(AddColorViewModels));
-                }
+        _ = openFileDialog.ShowDialog();
+    });
+
+    private RelayCommand? saveFileCommand;
+    public ICommand SaveFileCommand => saveFileCommand ??= new RelayCommand(_ => {
+        var saveFileDialog = new SaveFileDialog {
+            DefaultExt = "ppe",
+            Filter = "Postprocess files (*.ppe)|*.ppe|All files (*.*)|*.*",
+            Title = "Save postprocess effect"
+        };
+        _ = saveFileDialog.ShowDialog();
+    });
+
+    private ObservableCollection<AddColorViewModel> addColorViewModels = new() {
+        // Add color
+        new AddColorViewModel(),
+        // Base color
+        new AddColorViewModel(),
+        // Gray color
+        new AddColorViewModel {
+            ItensityLabelVisibility = Visibility.Visible,
+            ItensityTextBoxVisibility = Visibility.Visible
+        },
+        // Blur
+        new AddColorViewModel {
+            ItensityLabelVisibility = Visibility.Visible,
+            ItensityTextBoxVisibility = Visibility.Visible
+        }
+    };
+    public ObservableCollection<AddColorViewModel> AddColorViewModels {
+        get {
+            return addColorViewModels;
+        }
+        set {
+            if (addColorViewModels != value) {
+                addColorViewModels = value;
+                NotifyPropertyChanged(nameof(AddColorViewModels));
             }
         }
     }
