@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace PostprocessEditor.ViewModels {
+namespace IXRayForms.MinimalMvvm {
     public abstract class ViewModelBase : INotifyPropertyChanged {
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

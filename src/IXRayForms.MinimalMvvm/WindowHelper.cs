@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PostprocessEditor.ViewModels {
+namespace IXRayForms.MinimalMvvm {
     public static class WindowHelper {
         public static void CloseWindowByContext(object context) {
             foreach (Window window in Application.Current.Windows) {

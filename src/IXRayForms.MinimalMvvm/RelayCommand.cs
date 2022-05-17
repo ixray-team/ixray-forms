@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Input;
 
-namespace PostprocessEditor.ViewModels {
+namespace IXRayForms.MinimalMvvm {
     public class RelayCommand : ICommand {
         private readonly Action<object> execute;
         private readonly Predicate<object> canExecute;
