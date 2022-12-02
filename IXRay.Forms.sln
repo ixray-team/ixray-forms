@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostprocessEditor.WindowsFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostprocessEditor.Wpf", "src\PostprocessEditor.Wpf\PostprocessEditor.Wpf.csproj", "{AFDAC8F7-1A0E-4A86-B0A8-CC79A0FDBAA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IXRayForms.MinimalMvvm", "src\IXRayForms.MinimalMvvm\IXRayForms.MinimalMvvm.csproj", "{8AA1B811-751E-43B9-8AD9-E3830CCA118D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,18 +51,6 @@ Global
 		{AFDAC8F7-1A0E-4A86-B0A8-CC79A0FDBAA2}.Release|x64.Build.0 = Release|x64
 		{AFDAC8F7-1A0E-4A86-B0A8-CC79A0FDBAA2}.Release|x86.ActiveCfg = Release|x86
 		{AFDAC8F7-1A0E-4A86-B0A8-CC79A0FDBAA2}.Release|x86.Build.0 = Release|x86
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|x64.Build.0 = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Debug|x86.Build.0 = Debug|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|x64.ActiveCfg = Release|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|x64.Build.0 = Release|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|x86.ActiveCfg = Release|Any CPU
-		{8AA1B811-751E-43B9-8AD9-E3830CCA118D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

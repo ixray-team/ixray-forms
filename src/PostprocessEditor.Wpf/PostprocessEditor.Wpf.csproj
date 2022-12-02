@@ -1,14 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net6.0-windows</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <StartupObject>PostprocessEditor.App</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\IXRayForms.MinimalMvvm\IXRayForms.MinimalMvvm.csproj" />
+        <PackageReference Include="ImeSense.Helpers.Mvvm" Version="0.2.0" />
     </ItemGroup>
 </Project>

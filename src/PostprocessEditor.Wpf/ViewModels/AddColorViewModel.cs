@@ -1,42 +1,32 @@
 using System.Windows;
-using System.Windows.Input;
 
-using IXRayForms.MinimalMvvm;
+using ImeSense.Helpers.Mvvm.ComponentModel;
+using ImeSense.Helpers.Mvvm.Input;
 
 namespace PostprocessEditor.ViewModels;
 
-public class AddColorViewModel : ViewModelBase {
+public class AddColorViewModel : ObservableObject {
     public AddColorViewModel() {
+        ItensityLabelVisibility = Visibility.Collapsed;
+        ItensityTextBoxVisibility = Visibility.Collapsed;
     }
 
-    private Visibility itensityLabelVisibility = Visibility.Collapsed;
+    private Visibility itensityLabelVisibility;
     public Visibility ItensityLabelVisibility {
-        get {
-            return itensityLabelVisibility;
-        }
-        set {
-            if (itensityLabelVisibility != value) {
-                itensityLabelVisibility = value;
-                NotifyPropertyChanged(nameof(ItensityLabelVisibility));
-            }
-        }
+        get => itensityLabelVisibility;
+        set => SetProperty(ref itensityLabelVisibility, value);
     }
 
-    private Visibility itensityTextBoxVisibility = Visibility.Collapsed;
+    private Visibility itensityTextBoxVisibility;
     public Visibility ItensityTextBoxVisibility {
-        get {
-            return itensityTextBoxVisibility;
-        }
-        set {
-            if (itensityTextBoxVisibility != value) {
-                itensityTextBoxVisibility = value;
-                NotifyPropertyChanged(nameof(ItensityTextBoxVisibility));
-            }
-        }
+        get => itensityTextBoxVisibility;
+        set => SetProperty(ref itensityTextBoxVisibility, value);
     }
 
-    private RelayCommand? setColorCommand;
-    public ICommand SetColorCommand => setColorCommand ??= new RelayCommand(_ => {
+    private void SetColor() {
         // TODO ColorDialog
-    });
+    }
+
+    private IRelayCommand? setColorCommand;
+    public IRelayCommand SetColorCommand => setColorCommand ??= new RelayCommand(SetColor);
 }
