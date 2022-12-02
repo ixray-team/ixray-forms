@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace PostprocessEditor.Wpf.Views;
+namespace IXRay.Forms.PostprocessEditor.Wpf.Views;
 
 /// <summary>
 /// Interaction logic for ColorPickerWindow.xaml

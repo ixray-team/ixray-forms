@@ -1,9 +1,9 @@
-<UserControl x:Class="PostprocessEditor.Views.PointListUserControl"
+<UserControl x:Class="IXRay.Forms.PostprocessEditor.Wpf.Views.PointListUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:l="clr-namespace:PostprocessEditor"
+             xmlns:l="clr-namespace:IXRay.Forms.PostprocessEditor.Wpf"
              mc:Ignorable="d"
              d:DesignHeight="230"
              d:DesignWidth="150">

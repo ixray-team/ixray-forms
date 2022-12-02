@@ -6,7 +6,7 @@ using Microsoft.Win32;
 using ImeSense.Helpers.Mvvm.ComponentModel;
 using ImeSense.Helpers.Mvvm.Input;
 
-namespace PostprocessEditor.ViewModels;
+namespace IXRay.Forms.PostprocessEditor.Wpf.ViewModels;
 
 public class MainViewModel : ObservableObject {
     public MainViewModel() {

@@ -3,7 +3,7 @@ using System.Windows;
 using ImeSense.Helpers.Mvvm.ComponentModel;
 using ImeSense.Helpers.Mvvm.Input;
 
-namespace PostprocessEditor.ViewModels;
+namespace IXRay.Forms.PostprocessEditor.Wpf.ViewModels;
 
 public class AddColorViewModel : ObservableObject {
     public AddColorViewModel() {

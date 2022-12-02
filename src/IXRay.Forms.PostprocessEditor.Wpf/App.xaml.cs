@@ -1,8 +1,8 @@
 using System.Windows;
 
-using PostprocessEditor.Views;
+using IXRay.Forms.PostprocessEditor.Wpf.Views;
 
-namespace PostprocessEditor;
+namespace IXRay.Forms.PostprocessEditor.Wpf;
 
 /// <summary>
 /// Interaction logic for App.xaml
