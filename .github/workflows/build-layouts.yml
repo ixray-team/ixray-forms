@@ -1,0 +1,58 @@
+name: 'Build layouts'
+
+on:
+  push:
+    branches:
+    - '**'
+    paths:
+    - '.github/workflows/**'
+    - 'src/**'
+    - '*.sln'
+    - '*.props'
+  pull_request:
+    branches:
+    - '**'
+    paths:
+    - '.github/workflows/**'
+    - 'src/**'
+    - '*.sln'
+    - '*.props'
+
+jobs:
+  build-layouts:
+    name: 'Building'
+
+    strategy:
+      matrix:
+        system: [ windows-2022 ]
+        config: [ Debug, Release ]
+
+    runs-on: ${{ matrix.system }}
+
+    env:
+      Solution: IXRay.Forms.sln
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Setup dependencies
+      run: |
+        dotnet restore $env:Solution
+
+    - name: Build solution
+      run: |
+        dotnet build $env:Solution -p:Configuration=${{ matrix.config }} --no-restore
+
+    - name: Upload binaries
+      uses: actions/upload-artifact@v3
+      with:
+        name: bin
+        path: bin/
