@@ -6,7 +6,5 @@ namespace PostprocessEditor.Views;
 /// Interaction logic for PointListUserControl.xaml
 /// </summary>
 public partial class PointListUserControl : UserControl {
-    public PointListUserControl() {
-        InitializeComponent();
-    }
+    public PointListUserControl() => InitializeComponent();
 }

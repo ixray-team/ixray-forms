@@ -6,7 +6,5 @@ namespace PostprocessEditor.Views;
 /// Interaction logic for AddColorUserControl.xaml
 /// </summary>
 public partial class AddColorUserControl : UserControl {
-    public AddColorUserControl() {
-        InitializeComponent();
-    }
+    public AddColorUserControl() => InitializeComponent();
 }

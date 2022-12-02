@@ -6,7 +6,5 @@ namespace PostprocessEditor.Views;
 /// Interaction logic for TimeConstructorUserControl.xaml
 /// </summary>
 public partial class TimeConstructorUserControl : UserControl {
-    public TimeConstructorUserControl() {
-        InitializeComponent();
-    }
+    public TimeConstructorUserControl() => InitializeComponent();
 }
